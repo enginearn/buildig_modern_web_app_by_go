@@ -1,0 +1,10 @@
+services:
+    go_service:
+        build: ./ # Dockerfileの位置
+        image: go_custom_user
+        container_name: go_container
+        tty: true
+        ports:
+            - '5555:5555' # ホスト:コンテナ
+        volumes:
+            - .:/home/go_user # カレントディレクトリを共有
