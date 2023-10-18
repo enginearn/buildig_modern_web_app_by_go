@@ -8,6 +8,8 @@
 
 ## Docker
 
+0. `docker compose build --no-cache`
+
 1. `docker-compose up`
 
 2. `docker exec -it go_container bash`
