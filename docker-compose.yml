@@ -1,6 +1,6 @@
 services:
     go_service:
-        build: ./ # Dockerfileの位置
+        build: . # Dockerfileの位置
         image: go_custom_user
         container_name: go_container
         tty: true
