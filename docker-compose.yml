@@ -3,7 +3,8 @@ services:
         build: . # Dockerfileの位置
         image: go_custom_user
         container_name: go_container
-        tty: true
+        stdin_open: true # コンテナの標準入力を開く
+        tty: true # コンテナの標準入力を有効にする
         ports:
             - '5555:5555' # ホスト:コンテナ
         volumes:
